@@ -10,7 +10,4 @@ RUN npm install
 
 COPY . .
 
-ADD start.sh /
-RUN chmod +x /start.sh
-
-CMD ["/start.sh"]
+CMD npm run deploy ; npm start
